@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.9.5 on darwin)" generated="2024-04-05T14:21:39.212512" rpa="false" schemaversion="5">
+<suite id="s1" name="AddTasks" source="/Users/senthooran/PycharmProjects/RobotGit/Tests/AddTasks.robot">
+<test id="s1-t1" name="Verify that valid user able to add a task." line="7">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-04-05T14:21:39.349007" level="INFO">Starting the test cases here!!!</msg>
+<arg>Starting the test cases here!!!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-04-05T14:21:39.348878" elapsed="0.000175"/>
+</kw>
+<kw name="Open a Web Page And Maximize" owner="Common">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-05T14:21:39.350353" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<arg>${url}</arg>
+<arg>${Brower}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-05T14:21:39.350175" elapsed="29.282001"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-05T14:22:08.633014" elapsed="0.416081"/>
+</kw>
+<status status="PASS" start="2024-04-05T14:21:39.349925" elapsed="29.699469"/>
+</kw>
+<kw name="Open The Thrive Web Page" owner="Common">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-04-05T14:22:09.050800" level="INFO">Opening url 'https://app.thrivemycareer.com/}'</msg>
+<arg>${webPage}}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-04-05T14:22:09.050565" elapsed="5.463836"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-05T14:22:23.516375" level="INFO">Slept 9 seconds.</msg>
+<arg>9s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-05T14:22:14.514608" elapsed="9.001897"/>
+</kw>
+<status status="PASS" start="2024-04-05T14:22:09.050041" elapsed="14.466587"/>
+</kw>
+<kw name="Login as Valid User" owner="Common">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-05T14:22:23.517860" level="INFO">Typing text 'sri.senthooran@gmail.com' into text field 'id=loginEmail'.</msg>
+<arg>id=loginEmail</arg>
+<arg>sri.senthooran@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-05T14:22:23.517232" elapsed="1.587345"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-05T14:22:25.104930" level="INFO">Typing text 'Tyco1234$' into text field 'id=loginPassword'.</msg>
+<arg>id=loginPassword</arg>
+<arg>Tyco1234$</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-05T14:22:25.104758" elapsed="0.206225"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-05T14:22:25.311425" level="INFO">Clicking button 'id=loginSubmit'.</msg>
+<arg>id=loginSubmit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-05T14:22:25.311211" elapsed="0.225222"/>
+</kw>
+<status status="PASS" start="2024-04-05T14:22:23.516906" elapsed="2.019642"/>
+</kw>
+<kw name="Verified Home Page Loaded" owner="Common">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>My Services</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-04-05T14:22:25.537034" elapsed="3.716280"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-04-05T14:22:29.956165" level="INFO">Current page contains text 'Dashboard'.</msg>
+<arg>Dashboard</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-04-05T14:22:29.253522" elapsed="0.702769"/>
+</kw>
+<status status="PASS" start="2024-04-05T14:22:25.536794" elapsed="4.419613"/>
+</kw>
+<kw name="Add a New Task" owner="Common">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-05T14:22:38.958433" level="INFO">Slept 9 seconds.</msg>
+<arg>9s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-05T14:22:29.957456" elapsed="9.001798"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-05T14:22:38.962101" level="INFO">Clicking button 'xpath=//*[@id="ember32"]/div/div[2]/div/div/div[1]/button'.</msg>
+<arg>xpath=//*[@id="ember32"]/div/div[2]/div/div/div[1]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-05T14:22:38.960668" elapsed="0.232073"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-05T14:22:44.194597" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-05T14:22:39.192920" elapsed="5.002438"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-05T14:22:44.198255" level="INFO">Typing text 'sentho_one' into text field 'id=title'.</msg>
+<msg time="2024-04-05T14:22:44.533148" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-05T14:22:44.533363" level="FAIL">Element with locator 'id=title' not found.</msg>
+<arg>id=title</arg>
+<arg>sentho_one</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2024-04-05T14:22:44.196817" elapsed="0.338715">Element with locator 'id=title' not found.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=description</arg>
+<arg>Test note</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-05T14:22:44.535811" elapsed="0.000038"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>css =#modal &gt; div &gt; div &gt; div.modal-body &gt; form &gt; button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-05T14:22:44.535952" elapsed="0.000023"/>
+</kw>
+<status status="FAIL" start="2024-04-05T14:22:29.957040" elapsed="14.579083">Element with locator 'id=title' not found.</status>
+</kw>
+<kw name="Close the Web Brower" owner="Common">
+<status status="NOT RUN" start="2024-04-05T14:22:44.536389" elapsed="0.000036"/>
+</kw>
+<kw name="Verified New Task Added" owner="Common">
+<status status="NOT RUN" start="2024-04-05T14:22:44.536561" elapsed="0.000024"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Opening main now</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-04-05T14:22:44.536703" elapsed="0.000024"/>
+</kw>
+<doc>This is 1st test cases to make sure valid user able to login</doc>
+<tag>Smoke Testing</tag>
+<status status="FAIL" start="2024-04-05T14:21:39.347941" elapsed="65.189037">Element with locator 'id=title' not found.</status>
+</test>
+<status status="FAIL" start="2024-04-05T14:21:39.213567" elapsed="65.324060"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">Smoke Testing</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="AddTasks">AddTasks</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
