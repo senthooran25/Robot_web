@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.9.5 on darwin)" generated="2024-04-15T23:08:17.942910" rpa="false" schemaversion="5">
+<suite id="s1" name="OpenTheApp" source="/Users/senthooran/PycharmProjects/Robot_Mobile_Testing/Tests/OpenTheApp.robot">
+<test id="s1-t1" name="Open Mobile Application" line="18">
+<kw name="Open Application">
+<msg time="2024-04-15T23:08:18.048705" level="FAIL">No keyword with name 'Open Application' found.</msg>
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=10.0.2.16:5554</arg>
+<arg>app=com.jci.iqwifi.user.app</arg>
+<arg>appActivity=com.jci.iqwifi.user.app.MainActivity</arg>
+<status status="FAIL" start="2024-04-15T23:08:18.048671" elapsed="0.000080">No keyword with name 'Open Application' found.</status>
+</kw>
+<status status="FAIL" start="2024-04-15T23:08:18.047448" elapsed="0.001998">No keyword with name 'Open Application' found.</status>
+</test>
+<status status="FAIL" start="2024-04-15T23:08:17.943844" elapsed="0.105965"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="OpenTheApp">OpenTheApp</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-04-15T23:08:18.046791" level="ERROR">Error in file '/Users/senthooran/PycharmProjects/Robot_Mobile_Testing/Tests/OpenTheApp.robot' on line 2: Importing library 'AppiumLibrary' failed: ModuleNotFoundError: No module named 'appium.webdriver.common.touch_action'
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/AppiumLibrary/__init__.py", line 4, in &lt;module&gt;
+    from AppiumLibrary.keywords import *
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/AppiumLibrary/keywords/__init__.py", line 9, in &lt;module&gt;
+    from ._touch import _TouchKeywords
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/AppiumLibrary/keywords/_touch.py", line 3, in &lt;module&gt;
+    from appium.webdriver.common.touch_action import TouchAction
+PYTHONPATH:
+  /Library/Frameworks/Python.framework/Versions/3.9/bin
+  /Library/Frameworks/Python.framework/Versions/3.9/lib/python39.zip
+  /Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9
+  /Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/lib-dynload
+  /Users/senthooran/Library/Python/3.9/lib/python/site-packages
+  /Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages</msg>
+</errors>
+</robot>
