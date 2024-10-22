@@ -1,0 +1,19 @@
+name: Trigger PagerDuty Incident
+on:
+  push:
+    branches:
+      - main
+jobs:
+  notify_pagerduty:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger PagerDuty
+        env:
+          PAGERDUTY_API_KEY: ${{ secrets.PAGERDUTY_API_KEY }}
+          PAGERDUTY_SERVICE_ID: ${{ secrets.PAGERDUTY_SERVICE_ID }}
+        run: |
+          curl -X POST \
+            -H "Content-Type: application/json" \
+            -H "Authorization: Token token=${PAGERDUTY_API_KEY}" \
+            -d '{"incident": {"type": "incident", "title": "GitHub Code Push Triggered", "service": {"id": "${PAGERDUTY_SERVICE_ID}", "type": "service_reference"}}}' \
+            https://api.pagerduty.com/incidents
